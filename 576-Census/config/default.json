@@ -1,0 +1,26 @@
+{
+    "features": [
+        "Age",
+        "AgeSplit",
+        "EducationNum",
+        "Fnlwgt",
+        "Sex",
+        "WorkClass",
+        "Education",
+        "MaritalStatus",
+        "Occupation",
+        "Relationship",
+        "Race",
+        "NativeCountry"
+    ],
+    "model_params": {
+        "Lgbm": {
+            "objective": "binary",
+            "num_boost_round": 100
+        },
+        "RandomForest": {
+            "max_depth": 30,
+            "random_state": 0
+        }
+    }
+}
