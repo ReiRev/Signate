@@ -87,7 +87,7 @@ final_estimator = VotingClassifier(
         ('nn-shallow',  make_pipeline(StandardScaler(),
                                       KerasClassifier(model=nn_model, batch_size=128, epochs=1000, random_state=0))),
         ('nn-deep',  make_pipeline(StandardScaler(),
-                                   KerasClassifier(model=nn_model, batch_size=128, epochs=1000, random_state=0)))
+                                   KerasClassifier(model=nn_model, batch_size=128, epochs=1000,random_state=0)))
     ],
     voting='hard',
     n_jobs=n_jobs
